@@ -262,29 +262,31 @@ export const curriculum: Curriculum = {
   geology: {
     name: "Geology",
     years: {
-      "L1": L1_CSVT,
+      "L1": L1_CSVT, // Shared First Year
       "L2": {
         "S3": [
           { code: "Geol201", name: "Géologie Générale", credits: 4 },
-          { code: "Geol202", name: "Lab: Géologie Générale", credits: 2 },
+          { code: "Geol202", name: "Laboratoire du Géologie Générale", credits: 2 },
           { code: "Geol203", name: "Géosciences Environnement", credits: 4 },
-          { code: "Geol204", name: "Lab: Géosciences Environnement", credits: 2 },
+          { code: "Geol204", name: "Laboratoire de Géosciences Environnement", credits: 2 },
           { code: "Geol205", name: "Informatiques et Statistiques", credits: 4 },
-          { code: "Geol207", name: "Géosciences Org. et Minérales I", credits: 4 },
-          { code: "Geol208", name: "Lab: Géosciences Org/Min I", credits: 2 },
+          { code: "Geol207", name: "Géosciences Organiques et Minérales I", credits: 4 },
+          { code: "Geol208", name: "Laboratoire de Géosciences Org/Min I", credits: 2 },
           { code: "Geol209", name: "Mécanique des Fluides", credits: 4 },
-          { code: "Geol210", name: "Lab: Mécanique des Fluides", credits: 2 },
-          { code: "Geol211", name: "Paléontologie/Stratigraphie", credits: 4 },
-          { code: "Geol212", name: "Lab: Paléo/Stratigraphie", credits: 2 },
+          { code: "Geol210", name: "Laboratoire de Mécanique des Fluides", credits: 2 },
+          { code: "Lang201", name: "Anglais", credits: 2 }
+        ],
+        "S4": [
+          { code: "Geol211", name: "Paléontologie, Stratigraphie, Paléoenvironnement", credits: 4 },
+          { code: "Geol212", name: "Laboratoire de Paléo/Stratigraphie", credits: 2 },
           { code: "Geol213", name: "Géochimie Organique et Minérale", credits: 6 },
           { code: "Geol215", name: "Tectonique analytique", credits: 6 },
           { code: "Geol217", name: "Pédologie", credits: 4 },
-          { code: "Geol218", name: "Lab: Pédologie", credits: 2 },
+          { code: "Geol218", name: "Laboratoire de Pédologie", credits: 2 },
           { code: "Geol219", name: "Géophysique I", credits: 3 },
-          { code: "Geol220", name: "Lab: Géophysique I", credits: 1 },
-          { code: "Lang202", name: "Anglais 2", credits: 2 },
-          { code: "Lang201", name: "Anglais", credits: 2 }
-        ],
+          { code: "Geol220", name: "Laboratoire de Géophysique I", credits: 1 },
+          { code: "Lang202", name: "Anglais 2", credits: 2 }
+        ]
       },
       "L3": {
         "S5": [
@@ -313,9 +315,9 @@ export const curriculum: Curriculum = {
           { code: "Geol325", name: "Training", credits: 7 },
           { code: "Geol326", name: "Natural and Gravitational Risks", credits: 4 },
           { code: "Geol327", name: "Natural/Gravitational Risks Lab", credits: 2 }
-        ],
-      },
-    },
+        ]
+      }
+    }
   },
 
   // --- MATH & INFORMATICS BRANCH (MIS) ---
@@ -323,81 +325,84 @@ export const curriculum: Curriculum = {
   informatics: {
     name: "Informatics",
     years: {
-      "L1": L1_MIS,
+      "L1": L1_MIS, // Shared First Year
       "L2": {
         "S3": [
-          { code: "I2201", name: "Client-side WEB Development", credits: 4 },
-          { code: "I2206", name: "Data Structures", credits: 5 },
+          { code: "I2201", name: "Client-side Web Development", credits: 4 },
           { code: "I2202", name: "Computer Organization", credits: 4 },
-          { code: "I2207", name: "Computer Architecture", credits: 4 },
           { code: "I2203", name: "Operating System I", credits: 4 },
           { code: "I2204", name: "Imperative Programming", credits: 5 },
           { code: "I2205", name: "Graph Theory", credits: 3 },
-          { code: "I2208", name: "Computer Networks", credits: 4 },
           { code: "S2250", name: "Introduction to Probability", credits: 4 },
-          { code: "I2209", name: "Logical Programming", credits: 4 },
           { code: "M2250", name: "Mathematics for Computer Science", credits: 3 },
+          { code: "M2251", name: "Numerical Analysis (Elective)", credits: 3 },
+          { code: "I2231", name: "Operational Research (Elective)", credits: 3 },
+          { code: "I2232", name: "Functional Programming (Elective)", credits: 3 }
+        ],
+        "S4": [
+          { code: "I2206", name: "Data Structures", credits: 5 },
+          { code: "I2207", name: "Computer Architecture", credits: 4 },
+          { code: "I2208", name: "Computer Networks", credits: 4 },
+          { code: "I2209", name: "Logical Programming", credits: 4 },
           { code: "I2210", name: "Database I", credits: 5 },
           { code: "I2211", name: "Object Oriented Programming", credits: 5 },
-          { code: "M2251", name: "Numerical Analysis", credits: 3 },
-          { code: "I2233", name: "Computer Graphics", credits: 3 },
-          { code: "I2231", name: "Operational Research", credits: 3 },
-          { code: "I2234", name: "Image Processing", credits: 3 },
-          { code: "I2232", name: "Functional Programming", credits: 3 }
-        ],
+          { code: "I2233", name: "Computer Graphics (Elective)", credits: 3 },
+          { code: "I2234", name: "Image Processing (Elective)", credits: 3 }
+        ]
       },
       "L3": {
         "S5": [
-          { code: "I3301", name: "Génie Logiciel", credits: 4 },
-          { code: "I3302", name: "Développement Web Côté Server", credits: 4 },
-          { code: "I3303", name: "Systèmes Informatiques II", credits: 4 },
-          { code: "I3304", name: "Admin et Sécurité des Réseaux", credits: 4 },
-          { code: "I3305", name: "Interface Graphique et Application", credits: 3 },
-          { code: "I3306", name: "Base de Données II", credits: 3 },
-          { code: "DHR300", name: "Droits de l'Homme", credits: 3 },
-          { code: "I3350", name: "Développement Application Mobile", credits: 5 },
-          { code: "I3351", name: "Administration Systèmes", credits: 5 }
+          { code: "I3301", name: "Software Engineering", credits: 4 },
+          { code: "I3302", name: "Server-side Web Development", credits: 4 },
+          { code: "I3303", name: "Computer Systems II", credits: 4 },
+          { code: "I3304", name: "Network Administration & Security", credits: 4 },
+          { code: "I3305", name: "GUI and Applications", credits: 3 },
+          { code: "I3306", name: "Database II", credits: 3 },
+          { code: "DHR300", name: "Human Rights", credits: 3 },
+          { code: "I3350", name: "Mobile App Development (Elective)", credits: 5 },
+          { code: "I3351", name: "Systems Administration (Elective)", credits: 5 }
         ],
         "S6": [
-          { code: "I3307", name: "Théorie des langages", credits: 4 },
-          { code: "I3308", name: "Projet", credits: 4 },
-          { code: "L3300", name: "Langue Etrangère", credits: 3 },
+          { code: "I3307", name: "Theory of Languages", credits: 4 },
+          { code: "I3308", name: "Project", credits: 4 },
+          { code: "L3300", name: "Foreign Language", credits: 3 },
           { code: "S3306", name: "Probability Theory", credits: 4 },
           { code: "S3355", name: "Generalized Linear Model", credits: 3 },
-          { code: "I3330", name: "Gestion de projets informatiques", credits: 3 },
-          { code: "I3331", name: "Informatique et société", credits: 3 },
-          { code: "I3332", name: "Programmation nouvelle génération", credits: 3 },
-          { code: "I3333", name: "Synthèse d'images", credits: 3 },
-          { code: "I3340", name: "Programmation parallèle", credits: 4 },
-          { code: "I3341", name: "Algorithmique avancée", credits: 4 },
-          { code: "I3342", name: "Circuits Logiques avancés", credits: 3 },
-          { code: "I3343", name: "L'environnement et la pollution", credits: 3 },
-          { code: "I3344", name: "Simulation Num et Modélisation", credits: 6 }
-        ],
-      },
-    },
+          { code: "I3330", name: "IT Project Management (Elective)", credits: 3 },
+          { code: "I3331", name: "Informatics and Society (Elective)", credits: 3 },
+          { code: "I3332", name: "New Gen. Programming Language (Elective)", credits: 3 },
+          { code: "I3333", name: "Image Synthesis (Elective)", credits: 3 },
+          { code: "I3340", name: "Parallel Programming (Elective)", credits: 4 },
+          { code: "I3341", name: "Advanced Algorithms (Elective)", credits: 4 },
+          { code: "I3342", name: "Advanced Logic Circuits (Elective)", credits: 3 },
+          { code: "I3343", name: "Environment and Pollution (Elective)", credits: 3 },
+          { code: "I3344", name: "Numerical Simulation & Modeling (Elective)", credits: 6 }
+        ]
+      }
+    }
   },
-
   mathematics: {
     name: "Mathematics",
     years: {
-      "L1": L1_MIS,
+      "L1": L1_MIS, // Shared First Year
       "L2": {
         "S3": [
           { code: "M2200", name: "Bilinear Algebra", credits: 6 },
-          { code: "M2205", name: "Algebra and Arithmetics", credits: 6 },
           { code: "M2201", name: "Metric Topology", credits: 6 },
-          { code: "M2206", name: "Intro to Functional Analysis", credits: 6 },
-          { code: "M2202", name: "Vector Functions & Integrals", credits: 6 },
-          { code: "M2207", name: "Numerical Analysis & Sci Computing", credits: 6 },
-          { code: "M2203", name: "Ordinary Differential Equations", credits: 3 },
-          { code: "M2208", name: "Sequences and Series of Functions", credits: 6 },
-          { code: "M2204", name: "Discrete Mathematics", credits: 3 },
-          { code: "M2209", name: "Complex Analysis", credits: 3 },
+          { code: "M2202", name: "Vector Functions & Multiply Integrals", credits: 6 },
           { code: "S2200", name: "Introduction to Probability", credits: 6 },
+          { code: "M2203", name: "Ordinary Differential Equations", credits: 3 },
+          { code: "M2204", name: "Discrete Mathematics", credits: 3 }
+        ],
+        "S4": [
+          { code: "M2205", name: "Algebra and Arithmetics", credits: 6 },
+          { code: "M2206", name: "Introduction to Functional Analysis", credits: 6 },
+          { code: "M2207", name: "Numerical Analysis & Sci. Computations", credits: 6 },
+          { code: "M2208", name: "Sequences and Series of Functions", credits: 6 },
+          { code: "M2209", name: "Complex Analysis", credits: 3 },
           { code: "M2210", name: "Introduction to Mechanics", credits: 3 },
-          { code: "M2211", name: "Affine Geometry", credits: 3 },
-          { code: "M2213", name: "Differentials Equations & Apps", credits: 3 }
+          { code: "M2211", name: "Affine Geometry (Elective)", credits: 3 },
+          { code: "M2213", name: "Differential Equations & Apps (Elective)", credits: 3 }
         ]
       },
       "L3": {
@@ -406,20 +411,20 @@ export const curriculum: Curriculum = {
           { code: "M3301", name: "Theory of Measure and Integration", credits: 6 },
           { code: "M3302", name: "Differential Calculus", credits: 6 },
           { code: "M3303", name: "Geometry of Curves and Surfaces", credits: 3 },
-          { code: "DHR300", name: "Human Rights", credits: 3 }
+          { code: "DHR300", name: "Human Rights", credits: 3 },
+          { code: "M3311", name: "Theory of Bounded Operators (Elective)", credits: 3 },
+          { code: "M3312", name: "Theory of Differential Equation (Elective)", credits: 3 },
+          { code: "M3315", name: "General Topology (Elective)", credits: 3 }
         ],
         "S6": [
+          { code: "M3305", name: "Rings", credits: 6 },
+          { code: "M3316", name: "Numerical Methods", credits: 6 },
+          { code: "M3318", name: "Lagrangian Mechanics", credits: 6 },
           { code: "L3300", name: "Foreign Language", credits: 3 },
           { code: "M3304", name: "Holomorphic Functions", credits: 3 },
-          { code: "M3305", name: "Rings", credits: 6 },
           { code: "M3306", name: "Integration and Fourier Analysis", credits: 3 },
-          { code: "M3316", name: "Numerical Methods", credits: 6 },
-          { code: "M3318", name: "Lagrangian mechanics", credits: 6 },
-          { code: "M3311", name: "Theory of Bounded Operators", credits: 3 },
-          { code: "M3312", name: "Theory of Differential Equation", credits: 3 },
-          { code: "M3315", name: "General Topology", credits: 3 },
-          { code: "M3319", name: "Geometry", credits: 3 },
-          { code: "M3320", name: "Intro to Partial Diff Equations", credits: 3 }
+          { code: "M3319", name: "Geometry (Elective)", credits: 3 },
+          { code: "M3320", name: "Intro to Partial Diff. Equations (Elective)", credits: 3 }
         ]
       }
     }
@@ -529,24 +534,25 @@ export const curriculum: Curriculum = {
   physics: {
     name: "Physics",
     years: {
-      "L1": L1_PE,
+      "L1": L1_PE, // Shared First Year
       "L2": {
-        "S3": [],
+        "S3": [
+          { code: "I2270", name: "C/C++ Language", credits: 5 },
+          { code: "M2270", name: "Applied Mathematics", credits: 5 },
+          { code: "P2200", name: "Electromagnetism", credits: 6 },
+          { code: "P2201", name: "Modern Physics", credits: 6 },
+          { code: "E2270", name: "Electronics for Physics", credits: 6 },
+          { code: "P2203", name: "General Physics Laboratory", credits: 2 }
+        ],
         "S4": [
-          { code: "I2270", name: "Langage C/C++", credits: 5 },
-          { code: "M2271", name: "Mathématiques pour la Physique", credits: 5 },
-          { code: "M2270", name: "Mathématiques Appliquées", credits: 5 },
-          { code: "M2272", name: "Analyse Numérique pour la Phy", credits: 5 },
-          { code: "P2200", name: "Électromagnétisme", credits: 6 },
-          { code: "P2204", name: "Mécanique Analytique", credits: 6 },
-          { code: "P2201", name: "Physique Moderne", credits: 6 },
-          { code: "P2205", name: "Optique et Électromagnétisme", credits: 6 },
-          { code: "I2270", name: "Électronique pour la Physique", credits: 6 },
-          { code: "P2206", name: "Lab: Physique Expérimentale", credits: 2 },
-          { code: "P2203", name: "Lab: Physique Générale", credits: 2 },
-          { code: "P2211", name: "Ondes et Vibrations", credits: 3 },
-          { code: "P2212", name: "Astrophysique", credits: 3 },
-          { code: "P2213", name: "Mécanique des Fluides", credits: 3 }
+          { code: "M2271", name: "Mathematics for Physics", credits: 5 },
+          { code: "M2272", name: "Numerical Analysis for Physics", credits: 5 },
+          { code: "P2204", name: "Analytical Mechanics", credits: 6 },
+          { code: "P2205", name: "Optics and Electromagnetism", credits: 6 },
+          { code: "P2206", name: "Experimental Physics Laboratory", credits: 2 },
+          { code: "P2211", name: "Waves and Vibrations (Elective)", credits: 3 },
+          { code: "P2212", name: "Astrophysics (Elective)", credits: 3 },
+          { code: "P2213", name: "Fluid Mechanics (Elective)", credits: 3 }
         ]
       },
       "L3": {
@@ -554,34 +560,25 @@ export const curriculum: Curriculum = {
           { code: "P3300", name: "Thermodynamics", credits: 3 },
           { code: "P3301", name: "Solid State Physics", credits: 5 },
           { code: "P3302", name: "Quantum Mechanics", credits: 5 },
-          { code: "P3304", name: "Nuclear Physics", credits: 4 },
           { code: "P3303", name: "Optics and Thermodynamics Lab", credits: 2 },
-          { code: "P3316", name: "Programming for Physicists C++", credits: 6 },
-          { code: "P3305", name: "Atomic Physics", credits: 4 },
+          { code: "P3316", name: "Programming for Physicists (C++)", credits: 6 },
           { code: "DHR300", name: "Human Rights", credits: 3 },
-          { code: "P3306", name: "Statistical Physics", credits: 5 },
-          { code: "P3307", name: "Atomic and Nuclear Lab", credits: 2 },
-          { code: "P3311", name: "Semi-Conductors Physics", credits: 3 },
-          { code: "P3312", name: "Laser and Applications", credits: 3 },
-          { code: "P3313", name: "Heat Transfer 2", credits: 3 },
-          { code: "P3326", name: "Material Science", credits: 6 },
-          { code: "P3327", name: "Information Quantum Theory", credits: 6 },
-          { code: "P3314", name: "Acoustics", credits: 3 },
-          { code: "P3321", name: "Molecular Physics", credits: 3 },
-          { code: "P3322", name: "Adv. Electronics for Physicists", credits: 3 },
-          { code: "P3325", name: "Medical Imaging", credits: 3 }
+          { code: "P3311", name: "Semi-Conductors Physics (Elective)", credits: 3 },
+          { code: "P3312", name: "Laser and Applications (Elective)", credits: 3 },
+          { code: "P3313", name: "Heat Transfer 2 (Elective)", credits: 3 },
+          { code: "P3314", name: "Acoustics (Elective)", credits: 3 }
         ],
         "S6": [
           { code: "L3300", name: "Foreign Language", credits: 3 },
-          { code: "S3304", name: "Surveys and Techniques of Sampling", credits: 4 },
-          { code: "S3305", name: "Statistical Software", credits: 4 },
-          { code: "S3306", name: "Probability Theory", credits: 4 },
-          { code: "S3355", name: "Generalized Linear Model", credits: 3 },
-          { code: "I3345", name: "Development of Web", credits: 3 },
-          { code: "S3353", name: "Analytical Demography", credits: 3 },
-          { code: "S3354", name: "Operation Research", credits: 3 },
-          { code: "S3356", name: "Techniques of Insurance", credits: 3 },
-          { code: "S3357", name: "Extensions of the Linear Model", credits: 3 }
+          { code: "P3304", name: "Nuclear Physics", credits: 4 },
+          { code: "P3305", name: "Atomic Physics", credits: 4 },
+          { code: "P3306", name: "Statistical Physics", credits: 5 },
+          { code: "P3307", name: "Atomic and Nuclear Lab", credits: 2 },
+          { code: "P3326", name: "Material Science", credits: 6 },
+          { code: "P3327", name: "Information Quantum Theory", credits: 6 },
+          { code: "P3321", name: "Molecular Physics (Elective)", credits: 3 },
+          { code: "P3322", name: "Adv. Electronics for Physicists (Elective)", credits: 3 },
+          { code: "P3325", name: "Medical Imaging (Elective)", credits: 3 }
         ]
       }
     }
