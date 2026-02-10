@@ -5,7 +5,6 @@ import { curriculum, Subject } from './data';
 
 export default function Home() {
   // --- STATE ---
-  // FIX: Default to 'biology' (a valid key) instead of 'csvt'
   const [selectedMajor, setSelectedMajor] = useState<string>('biology');
   const [selectedYear, setSelectedYear] = useState<string>('L1');
   const [selectedSemester, setSelectedSemester] = useState<string>('S1');
@@ -15,10 +14,9 @@ export default function Home() {
   const [finalScore, setFinalScore] = useState<number>(0);
 
   // --- HELPERS (With Safety Checks) ---
-  // FIX: If selectedMajor doesn't exist, fallback to the first major in the list
+  // Fallback to biology if selection is invalid
   const currentMajor = curriculum[selectedMajor] || curriculum['biology'] || Object.values(curriculum)[0];
   
-  // Safety check: If currentMajor is somehow still missing, don't crash
   if (!currentMajor) {
     return <div className="p-10 text-center">Error: Major data not found. Please check data.ts</div>;
   }
@@ -26,7 +24,7 @@ export default function Home() {
   const yearsList = Object.keys(currentMajor.years);
   const showYearSelector = yearsList.length > 1;
 
-  // FIX: Ensure selectedYear exists in the new major, otherwise default to first available year
+  // Ensure selectedYear exists
   const safeYear = currentMajor.years[selectedYear] ? selectedYear : yearsList[0];
   
   const rawSemesters = Object.keys(currentMajor.years[safeYear] || {});
@@ -34,7 +32,7 @@ export default function Home() {
     ? [...rawSemesters, "Annual (S1 + S2)"] 
     : rawSemesters;
 
-  // FIX: Ensure selectedSemester exists, otherwise default to first available
+  // Ensure selectedSemester exists
   const safeSemester = (semestersList.includes(selectedSemester) || selectedSemester === "Annual (S1 + S2)")
     ? selectedSemester 
     : rawSemesters[0];
@@ -104,11 +102,22 @@ export default function Home() {
             <p>Official Grade Simulator for the Faculty of Sciences.</p>
           </div>
 
+          {/* --- UPDATED ABOUT CARD --- */}
           <div className="card" style={{ borderLeft: '4px solid var(--accent)', padding: '20px' }}>
             <h3 style={{ margin: '0 0 8px 0', fontSize: '1rem', color: 'var(--primary)' }}>About this Tool</h3>
-            <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-gray)', lineHeight: 1.5 }}>
+            <p style={{ margin: '0 0 12px 0', fontSize: '0.85rem', color: 'var(--text-gray)', lineHeight: 1.5 }}>
               Calculate your semester or annual average (GPA). Select "Annual" to simulate your full year result.
             </p>
+            
+            {/* Arabic Signature Section */}
+            <div style={{ borderTop: '1px solid #f1f5f9', paddingTop: '10px', marginTop: '10px' }}>
+              <p style={{ margin: 0, fontSize: '0.9rem', fontWeight: 'bold', color: '#15803d' }}>
+                تقدمة شعبة كلية العلوم
+              </p>
+              <p style={{ margin: '4px 0 0 0', fontSize: '0.85rem', color: '#15803d' }}>
+                #خدمتكم_شرف_لنا 💚
+              </p>
+            </div>
           </div>
 
           <div className="card">
