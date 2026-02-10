@@ -33,8 +33,8 @@ const L1_CSVT = {
     { code: "C1100", name: "General Chemistry", credits: 6 },
     { code: "M1109", name: "Analysis", credits: 6 },
     { code: "P1104", name: "Mechanics & Thermo", credits: 6 },
-    { code: "B1101", name: "Botany", credits: 3 },
-    { code: "GEN",   name: "Genetics", credits: 3 },
+    { code: "B1101", name: "Botany & V Repro", credits: 3 },
+    { code: "B1102", name: "Genetics&Anatomie", credits: 3 },
   ],
   "S2": [
     { code: "C1102", name: "Organic Chemistry", credits: 6 },
@@ -42,8 +42,8 @@ const L1_CSVT = {
     { code: "P1105", name: "Elec, Mag & Optics", credits: 6 },
     { code: "M1106", name: "Linear Algebra I", credits: 3 },
     { code: "S1100", name: "Statistics", credits: 3 },
-    { code: "B1103", name: "Ecology", credits: 3 },
-    { code: "B1105", name: "Geology & Embryology", credits: 3 },
+    { code: "B1103", name: "Ecology & Geology", credits: 3 },
+    { code: "B1105", name: "A Repro & Embryology", credits: 3 },
   ],
 };
 
