@@ -572,7 +572,16 @@ export const curriculum: Curriculum = {
           { code: "P3325", name: "Medical Imaging", credits: 3 }
         ],
         "S6": [
-          { code: "L3300", name: "Foreign Language", credits: 3 }
+          { code: "L3300", name: "Foreign Language", credits: 3 },
+          { code: "S3304", name: "Surveys and Techniques of Sampling", credits: 4 },
+          { code: "S3305", name: "Statistical Software", credits: 4 },
+          { code: "S3306", name: "Probability Theory", credits: 4 },
+          { code: "S3355", name: "Generalized Linear Model", credits: 3 },
+          { code: "I3345", name: "Development of Web", credits: 3 },
+          { code: "S3353", name: "Analytical Demography", credits: 3 },
+          { code: "S3354", name: "Operation Research", credits: 3 },
+          { code: "S3356", name: "Techniques of Insurance", credits: 3 },
+          { code: "S3357", name: "Extensions of the Linear Model", credits: 3 }
         ]
       }
     }
