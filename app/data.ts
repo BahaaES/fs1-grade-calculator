@@ -398,10 +398,9 @@ export const curriculum: Curriculum = {
           { code: "M2205", name: "Algebra and Arithmetics", credits: 6 },
           { code: "M2206", name: "Introduction to Functional Analysis", credits: 6 },
           { code: "M2207", name: "Numerical Analysis & Sci. Computations", credits: 6 },
-          { code: "M2208", name: "Sequences and Series of Functions", credits: 6 },
+          { code: "M2208", name: "Sequences and Series of Functions", credits: 3 },
           { code: "M2209", name: "Complex Analysis", credits: 3 },
           { code: "M2210", name: "Introduction to Mechanics", credits: 3 },
-          { code: "M2211", name: "Affine Geometry (Elective)", credits: 3 },
           { code: "M2213", name: "Differential Equations & Apps (Elective)", credits: 3 }
         ]
       },
