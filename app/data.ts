@@ -129,8 +129,10 @@ export const curriculum: Curriculum = {
           { code: "B3102", name: "Physiology of Functions", credits: 5 },
           { code: "B3103", name: "Basics of Immunology", credits: 4 },
           { code: "DRH300", name: "Human Rights", credits: 3 },
-          { code: "B3106", name: "Biophysics", credits: 4 },
-          { code: "B3107", name: "Nutrition", credits: 4 }
+          { code: "B3106/B3107", name: "Biophysics/Nutrition (1 of 2 Courses are to be picked )", credits: 4 },
+          { code: "Optional Course 1", name: "B3108/B3109/B3110", credits: 3 },
+           { code: "Optional Course 2", name: "B3108/B3109/B3110", credits: 3 }
+
         ],
         "S6": [
           { code: "B3200", name: "Bases of Molecular Biology", credits: 4 },
