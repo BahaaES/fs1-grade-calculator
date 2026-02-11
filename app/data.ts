@@ -366,15 +366,18 @@ export const curriculum: Curriculum = {
           { code: "L3300", name: "Foreign Language", credits: 3 },
           { code: "S3306", name: "Probability Theory", credits: 4 },
           { code: "S3355", name: "Generalized Linear Model", credits: 3 },
-          { code: "I3330", name: "IT Project Management (Elective)", credits: 3 },
-          { code: "I3331", name: "Informatics and Society (Elective)", credits: 3 },
-          { code: "I3332", name: "New Gen. Programming Language (Elective)", credits: 3 },
-          { code: "I3333", name: "Image Synthesis (Elective)", credits: 3 },
-          { code: "I3340", name: "Parallel Programming (Elective)", credits: 4 },
-          { code: "I3341", name: "Advanced Algorithms (Elective)", credits: 4 },
-          { code: "I3342", name: "Advanced Logic Circuits (Elective)", credits: 3 },
-          { code: "I3343", name: "Environment and Pollution (Elective)", credits: 3 },
-          { code: "I3344", name: "Numerical Simulation & Modeling (Elective)", credits: 6 }
+          
+          // Pick 2 of 4 (Courses are 3 credits each) - We can represent this as one block for simplicity or two generic slots
+          // To keep it simple like your S5 request, we can group them:
+          { code: "I333x", name: "Elective 1 (Project Mgmt / Society / New Gen Lang / Image Synthesis)", credits: 3 },
+          { code: "I333y", name: "Elective 2 (Project Mgmt / Society / New Gen Lang / Image Synthesis)", credits: 3 },
+
+          // Pick 1 of 2 (4 credits)
+          { code: "I3340/I3341", name: "Parallel Programming / Advanced Algorithms (Elective)", credits: 4 },
+
+          // Pick 6 ECTS total (Either one 6-credit course OR two 3-credit courses)
+          // Since the calculator sums credits, we can offer the user a generic "Optional Elective Block" of 6 credits
+          { code: "I334x", name: "Optional Elective Block (Logic / Env / Sim & Model)", credits: 6 }
         ]
       }
     }
