@@ -163,8 +163,7 @@ export const curriculum: Curriculum = {
           { code: "C2201", name: "Organic Chem of Funct Groups", credits: 4 },
           { code: "C2211", name: "Basic Analytical Chemistry", credits: 3 },
           { code: "I2260", name: "Informatics Skills for Chemists", credits: 2 },
-          { code: "BC2230", name: "Radioactivity & Radiation Prot", credits: 3 },
-          { code: "C2240", name: "Inorganic Chem for Biochemists", credits: 3 }
+          { code: "BC2230 or C2240", name: "Radioactivity & Radiation Prot/Inorganic Chem for Biochemists", credits: 3 }
         ],
         "S4": [
           { code: "B2214", name: "Physiology of Large Systems", credits: 3 },
@@ -359,8 +358,7 @@ export const curriculum: Curriculum = {
           { code: "I3305", name: "GUI and Applications", credits: 3 },
           { code: "I3306", name: "Database II", credits: 3 },
           { code: "DHR300", name: "Human Rights", credits: 3 },
-          { code: "I3350", name: "Mobile App Development (Elective)", credits: 5 },
-          { code: "I3351", name: "Systems Administration (Elective)", credits: 5 }
+          { code: "I3350/I3351", name: "Mobile App Development/Systems Administration (Elective)", credits: 5 }
         ],
         "S6": [
           { code: "I3307", name: "Theory of Languages", credits: 4 },
