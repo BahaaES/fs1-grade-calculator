@@ -141,11 +141,9 @@ export const curriculum: Curriculum = {
           { code: "B3203", name: "Environment and Pollution", credits: 3 },
           { code: "B3204", name: "Pedology", credits: 3 },
           { code: "L3300", name: "Foreign Language", credits: 3 },
-          { code: "B3205", name: "Developmental Biology", credits: 4 },
-          { code: "B3206", name: "Microbial Genetics", credits: 4 },
-          { code: "B3212", name: "Biotechnology", credits: 4 },
-          { code: "B3208", name: "Natural Sources of Energy", credits: 3 },
-          { code: "B3209", name: "Introduction to Genomics", credits: 3 }
+          { code: "B3208 or B3209", name: "Natural Sources of Energy/Introduction to Genomics", credits: 3 },
+          { code: "Optional Course 1", name: "B3205/B3206/B3212", credits: 4 },
+          { code: "Optional Course 2", name: "B3205/B3206/B3212", credits: 4 }
         ]
       }
     }
