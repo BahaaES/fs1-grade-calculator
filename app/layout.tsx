@@ -1,5 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata: Metadata = {
   title: 'Faculty Grade Calculator',
@@ -72,6 +73,9 @@ export default function RootLayout({
 
         {/* Global Footer */}
         <Footer />
+        
+        {/* Vercel Web Analytics */}
+        <Analytics />
         
       </body>
     </html>
